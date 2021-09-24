@@ -8,6 +8,5 @@ Left and Right - snake moves left and right
 When the snake eats food it grows by the length of on square
 
 # Snake endgame 
-When snake hits the wall gameover
-
-when snake head crashes with the tail gameover
+1) When snake hits the wall gameover
+2) when snake head crashes with the tail gameover
