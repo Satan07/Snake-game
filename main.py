@@ -12,7 +12,7 @@ screen.tracer(0)
 snake = Snake()
 food = Food()
 score = ScoreBoard()
-#gsuvs
+# gsuvs
 
 screen.listen()
 screen.onkey(snake.up, "Up")
@@ -31,16 +31,14 @@ while game_is_on:
         snake.extend()
         score.score_change()
 
-    if snake.head.xcor() > 290  or snake.head.xcor() < -290  or snake.head.ycor() < -290 or snake.head.ycor() > 290 :
+    if snake.head.xcor() > 290 or snake.head.xcor() < -290 or snake.head.ycor() < -290 or snake.head.ycor() > 290:
         game_is_on = False
         score.game_over()
 
-
     for turtle in snake.turtles[1::]:
 
-        if snake.head.distance(turtle) < 10 :
+        if snake.head.distance(turtle) < 10:
             game_is_on = False
             score.game_over()
-
 
 screen.exitonclick()
