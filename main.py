@@ -12,7 +12,7 @@ screen.tracer(0)
 snake = Snake()
 food = Food()
 score = ScoreBoard()
-
+#gsuvs
 
 screen.listen()
 screen.onkey(snake.up, "Up")
